@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div
+      id="signInContainer"
+      class="container w-50 d-flex justify-content-center align-items-center min-vh-100 min-vw-100 flex-column"
+    >
+      <div
+        class="landingPage text-white p-5 d-flex justify-content-center align-items-center flex-column"
+      >
+        <h2 class="mb-5">Welcome Back</h2>
+        <div id="alertSignIn" class="sign-in-alert d-none">
+          <p>Invalid Username or Password</p>
+        </div>
+        <div class="userInput">
+          <div class="username d-flex align-items-center mb-3">
+            <i class="fa-solid fa-user me-2"></i>
+            <input
+              id="signInUsername"
+              type="text"
+              placeholder="Username"
+              class="bg-transparent border-0 border-bottom"
+            />
+          </div>
+          <div class="password mb-4">
+            <i class="fa-solid fa-lock me-1"></i>
+            <input
+              id="signInPassword"
+              type="password"
+              placeholder="Password"
+              class="bg-transparent border-0 border-bottom"
+            />
+          </div>
+          <div class="centered-button text-center mb-4">
+            <button class="btn btn-primary">Login</button>
+          </div>
+          <div class="signup-link">
+            <p>
+              Don't have an account?
+              <span><a href="#" id="sign-up">Sign up</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="signUpContainer"
+      class="container w-50 d-flex justify-content-center align-items-center min-vh-100 min-vw-100 flex-column d-none"
+    >
+      <div
+        class="landingPage text-white text-center d-flex justify-content-center align-items-center flex-column p-5"
+      >
+        <h2 class="mb-3">
+          Sign up to our <br />
+          website
+        </h2>
+        <div id="alertSignUp" class="alert-primary d-none m-3">
+          Please Check Your Credentials
+        </div>
+        <div class="userInput">
+          <div class="username d-flex align-items-center mb-3">
+            <i class="fa-solid fa-user me-2"></i>
+            <input
+              oninput="validateInputs(this)"
+              id="signUpUsername"
+              type="text"
+              placeholder="Username"
+              class="bg-transparent border-0 border-bottom"
+            />
+          </div>
+          <div class="email d-flex align-items-center mb-3">
+            <i class="fa-regular fa-envelope me-2"></i>
+            <input
+              oninput="validateInputs(this)"
+              id="signUpEmail"
+              type="email"
+              placeholder="Email"
+              class="bg-transparent border-0 border-bottom"
+            />
+          </div>
+          <div class="password mb-4">
+            <i class="fa-solid fa-lock me-1"></i>
+            <input
+              oninput="validateInputs(this)"
+              id="signUpPassword"
+              type="password"
+              placeholder="Password"
+              class="bg-transparent border-0 border-bottom"
+            />
+          </div>
+          <div class="centered-button text-center mb-4">
+            <button id="signUpBtn" class="btn btn-primary">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="navbar" class="landing-page d-none">
+      <nav class="navbar navcolor navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid flex-row">
+          <a class="navbar-brand ps-5 text-white" href="#">SMART LOGIN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end pe-5"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex">
+              <button id="signOut" class="btn btn-outline-success">
+                Sign out
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div
+      id="signInContainer"
+      class="container w-50 d-flex justify-content-center align-items-center min-vh-100 min-vw-100 flex-column"
+    >
+      <div
+      id="nameOfUser"
+        class="landingPage text-white p-5 d-flex justify-content-center align-items-center flex-column"
+      >
+      </div>
+    </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    background-image: url(../Assets/wallpaperflare.com_wallpaper\ \(4\).jpg);
+}
+
+.landingPage{
+    height: 500px;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    border-radius: 20px;
+background-color: transparent;}
+
+.userInput input:focus {
+    outline: none !important;
+}
+.userInput input::placeholder {
+    color: white;
+}
+.userInput input {
+    caret-color: white;
+    color: white;
+}
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline !important;
+}
+
+.navcolor{
+    backdrop-filter: blur(20px) !important;
+background-color: transparent !important;
+box-shadow: 0px 2px 4px rgba(0, 0, 1, 0.1) !important;
+}
+.navbar-brand:hover {
+    text-decoration: none !important;
+  }
