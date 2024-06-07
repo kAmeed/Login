@@ -35,3 +35,12 @@ box-shadow: 0px 2px 4px rgba(0, 0, 1, 0.1) !important;
 .navbar-brand:hover {
     text-decoration: none !important;
   }
+.btncolor{
+    background-color: transparent !important;
+    border: 0.5px solid white !important;
+    transition: 0.3s;
+}
+.btncolor:hover{
+    background-color: rgb(83, 5, 156) !important
+}
+  
